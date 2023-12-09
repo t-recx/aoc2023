@@ -9,6 +9,8 @@ mod day4;
 mod day5;
 mod day6;
 mod day7;
+mod day8;
+mod day9;
 
 use day::Day;
 use day1::Day1;
@@ -18,6 +20,8 @@ use day4::Day4;
 use day5::Day5;
 use day6::Day6;
 use day7::Day7;
+use day8::Day8;
+use day9::Day9;
 
 fn main() {
 	let args: Vec<String> = env::args().skip(1).collect();
@@ -64,6 +68,18 @@ fn main() {
 		},
 		7 => {
 			let day = Day7 {};
+
+			println!("{}", day.one(&input));
+			println!("{}", day.two(&input));
+		},
+		8 => {
+			let day = Day8 {};
+
+			println!("{}", day.one(&input));
+			println!("{}", day.two(&input));
+		},
+		9 => {
+			let day = Day9 {};
 
 			println!("{}", day.one(&input));
 			println!("{}", day.two(&input));
