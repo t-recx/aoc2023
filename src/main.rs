@@ -6,6 +6,7 @@ mod day1;
 mod day10;
 mod day11;
 mod day13;
+mod day14;
 mod day15;
 mod day2;
 mod day3;
@@ -21,6 +22,7 @@ use day1::Day1;
 use day10::Day10;
 use day11::Day11;
 use day13::Day13;
+use day14::Day14;
 use day15::Day15;
 use day2::Day2;
 use day3::Day3;
@@ -106,6 +108,12 @@ fn main() {
         }
         13 => {
             let day = Day13 {};
+
+            println!("{}", day.one(&input));
+            println!("{}", day.two(&input));
+        }
+        14 => {
+            let day = Day14 {};
 
             println!("{}", day.one(&input));
             println!("{}", day.two(&input));
